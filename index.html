@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon"  href="img/favicon.png" />
+
+    <!-- Bootstrap CSS File -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/Mstyle.css" />
+
+</head>
+
+<body>
+    <!-- 先做页面导航 , fixed-top永远显示导航栏在视图顶端，避免遮挡需要在CSS里面添加伪元素-->
+    <nav class="navbar navbar-expand-lg zyxbgc navbar-dark fixed-top">
+        <!-- 当页面宽度小于lg时菜单页面变成汉堡包 -->
+        <div class="container">
+            <!-- 将边距样式套用到表格中，文件菜单居中 -->
+
+            <a href="#" class="navbar-brand me-auto"><img src="img/favicon.png" alt="logo" width="50" height="50"
+                    class="img-thumbnail"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span><!-- 添加汉堡包菜单 -->
+            </button>
+
+            <div class="collapse navbar-collapse " id="navmenu">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item me-5">
+                        <a href="#" class="nav-link smoothScroll"><i class="bi bi-house-heart"></i> Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a href="#about" class="nav-link smoothScroll">About</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a href="#portfolio" class="nav-link smoothScroll">Portfolio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="header" class="  p-5 zyxbgc text-light text-center text-sm-start">
+        <div class="container pt-5 pb-5">
+            <div class="d-flex">
+                <!-- 这个div放右边部分 ，display flex是弹性布局分开左右两个元素-->
+                <div class="pt-5">
+                    <!-- 这个div放左边部分 -->
+                    <h1><span class="text-warning">Welcome !</span><span class="text-white">to My Base</span>🙂👏💖
+                    </h1>
+                    <p class="zyxion lead text-muted my-5 ps-4"> <a href=""><i
+                                class="bi bi-wechat text-success"></i></a> <a href="https://github.com/yzhao72"><i
+                                class="bi bi-github text-dark"></i></a> <a href="www.linkedin.com/in/yixuan-zhao72"><i
+                                class="bi bi-linkedin text-primary"></i></a> <a
+                            href="https://www.instagram.com/exuanz72/"><i class="bi bi-instagram text-warning"></i></a>
+                    </p>
+                    <!-- my是纵轴，mx是横轴，间距为4 -->
+                </div>
+                <img src="img/Icons.svg" alt="showcase" class="w-50 d-none d-md-block">
+                <!-- display为不显示，当视窗比md尺寸大时显示图片为block -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- align-items-center 水平 justify-content-between垂直居中 -->
+                <div class="col-md m-5">
+                    <img src="img/personal.jpg" alt="TravelInJapan " class="img-thumbnail img-fluid" >
+                    <!-- img-fluid不会超出div的范围 -->
+                </div>
+                <div class="col-md p-5">
+                    <h2 class="mt-5" style="font-family: 'Times New Roman', Times, serif ;">Graduate Student in Urban
+                        Planning, School of Urban and Planning, State University of New York at Buffalo, USA</h2>
+                    <!--lead一种字体样式 -->
+                    <p class="mt-3">Interested in Urban Informatics, Geographic Information Science, Artificial
+                        Intelligence and Spatial Analysis of Urban Spatial Structure And Urban Form.</p>
+                    <a href="CV.html" class="btn btn-secondary mt-2">CV</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="services" class="p-3">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="services-block">
+                    <i class="bi bi-lightbulb" style="color: #6B9080;"></i>
+                    <span>Designer</span>
+                    <p class="separator">Six years of architectural space design experience and two years of urban
+                        design experience. </p>
+                </div>
+                <div class="services-block">
+                    <i class="bi bi-bar-chart-line " style="color: #6B9080;"></i>
+                    <span>Data Analysis</span>
+                    <p class="separator">Two years of experience in the field of urban big data analysis. </p>
+                </div>
+                <div class="services-block">
+                    <i class="bi bi-badge-3d " style="color: #6B9080;"></i>
+                    <span>Metaverse Model Development</span>
+                    <p class="separator">Familiar with BIM process, can use Rhino, Lumion & UE4 to make high simulation
+                        3D models. </p>
+                </div>
+                <div class="services-block">
+                    <i class="bi bi-bezier2" style="color: #6B9080;"></i>
+                    <span>Planner</span>
+                    <p class="separator">Two years of experience in urban physical space analysis and planning. </p>
+                </div>
+                <div class="services-block">
+                    <i class="bi bi-camera2" style="color: #6B9080;"></i>
+                    <span>Photographer</span>
+                    <p class="separator">Focus on natural landscape and architectural photography. </p>
+                </div>
+                <div class="services-block">
+                    <i class="bi bi-cpu" style="color: #6B9080;"></i>
+                    <span>Developer</span>
+                    <p class="separator">Mainly concerned with WebGIS development. </p>
+                </div>
+                <div class="services-block">
+                    <i class="bi bi-robot" style="color: #6B9080;"></i>
+                    <span>AI</span>
+                    <p class="separator">Master the Python-based geographic artificial intelligence model, and be
+                        proficient in the heroic Pytouch framework. </p>
+                </div>
+
+
+            </div>
+        </div> 
+    </section>
+
+
+    <section id="portfolio" class="p-5">
+        <div class="container">
+            <div class="accordion accordion-flush mt-5" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Design
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p class="pt-3 pb-3">Placeholder content for this accordion, which is intended to
+                                demonstrate the </p>
+                            <div class="owl-carousel owl-theme">
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT1</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT2</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT3</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT4</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT5</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT6</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Analyze& Planning
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p class="pt-3 pb-3">Placeholder content for this accordion, which is intended to
+                                demonstrate the </p>
+                            <div class="owl-carousel owl-theme">
+                                <a href="SubPage1.html">
+                                    <div  class="ms-2 me-2">
+                                        <div  class="cadr">
+                                            <img src="img/PROJECT3.jpg" alt="project3" class="card-img-top">
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Development& Create
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p class="pt-3 pb-3">Placeholder content for this accordion, which is intended to
+                                demonstrate the </p>
+                            <div class="owl-carousel owl-theme">
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT1</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT2</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT3</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT4</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT5</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ms-2 me-2">
+                                    <div class="cadr">
+                                        <img src="img/favicon.png" alt="XXX" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">IMAGE TIT6</h5>
+                                            <p>You are here hahahhah</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- align-items-center 水平 justify-content-between垂直居中 -->
+                <div class="col-md p-5">
+                    <h2 class="mt-5" style="font-family: 'Times New Roman', Times, serif ;">GET IN TOUCH</h2>
+                    <!--lead一种字体样式 -->
+                    <ul class="contact-details mt-3">
+                        <li><i class="bi bi-house-heart"> </i><span>Hayes Hall, University at Buffalo,&nbsp;South
+                                Campus</span></li>
+                        <li> </li>
+                        <li><i class="bi bi-geo-alt"></i> <span>Buffalo, New York 14214, USA</span></li>
+                        <li> </li>
+                        <li><i class="bi bi-telephone-inbound"> </i><span>+16262063111</span></li>
+                        <li> </li>
+                        <li><i class="bi bi-envelope"> </i><span>yzhao72@buffalo.edu</span></li>
+                    </ul>
+
+                </div>
+                <div class="col-md p-5 m-5">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScBHuFbzHFIeVzOtRNSjNSxKQXnXJJEFNpx96XHK0XnIoKdgA/viewform?embedded=true"
+                        height="500"></iframe>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="p-4 zyxbgc text-light text-center">
+        <div class="container">
+            <p class="lead text-muted my-1 zyxion2"> <a href=""><i class="bi bi-wechat text-white"></i></a> <a
+                    href="https://github.com/yzhao72"><i class="bi bi-github text-white"></i></a> <a
+                    href="www.linkedin.com/in/yixuan-zhao72"><i class="bi bi-linkedin text-white"></i></a> <a
+                    href="https://www.instagram.com/exuanz72/"><i class="bi bi-instagram text-white"></i></a> </p>
+            <p class="lead">Copyright &copy; 2022.Yixuan Zhao All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/MainPage.js"></script>
+
+</body>
+
+</html>

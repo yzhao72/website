@@ -1,0 +1,175 @@
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%
+    }
+}
+
+/* 当窗口宽度大于768时自动套用原素变为50% */
+
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.smoothScroll{
+  font-weight: bold;
+  font-size: large;
+}
+
+
+
+
+body::before{
+    display: block;
+    content: '';
+    height: 56px;
+}
+
+.zyxbgc{
+    background: rgb(107, 144, 128);
+    
+}
+
+.zyxbgd{
+  background: rgb(246, 255, 248);
+  
+}
+
+p.zyxion{
+    font-size:xx-large;
+    letter-spacing:5px;  
+    
+
+}
+
+#about{
+    background: rgb(246, 255, 248);
+}
+
+
+#services {
+    background: rgb(246, 255, 248);
+    position: relative;
+    padding-bottom: 80px;
+    
+  }
+  
+  .owl-item {
+    float: left;
+  }
+  .services-block span {
+    margin: 10px 0;
+    position: relative;
+    font-size: 13px;
+    color: #292929;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+  }
+  
+  .services-block .separator {
+    margin: 0;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(144, 144, 144, 0.71);
+  }
+  
+  .services-block i {
+    font-size: 44px;
+
+    line-height: 44px;
+  }
+  
+  
+  .services-carousel  .owl-stage-outer {
+    overflow: hidden;
+  }
+  
+  .services-carousel .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .services-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    border: 0;
+    padding: 0 !important;
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  /* OWL导航标志 */
+  .owl-nav {
+    display: none;
+  }
+
+
+#portfolio{
+  background-color: rgb(164, 195, 178);
+}
+
+.accordion-item{
+  background-color: rgb(204, 227, 222);
+  
+
+}
+
+#contact{
+  background-color: rgb(246, 255, 248);
+  
+}
+
+.contact-details{
+  list-style-type: none;
+  
+}
+
+
+
+
+
+/* footer */
+
+
+.lead{
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+p.zyxion2{
+  font-size:small;
+  letter-spacing:5px;  
+  
+
+}
+
+#topic{
+  
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-weight: bold;
+}
+.par{
+  font-size:large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.list1{
+  font-size:medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  
+}
+
+
+iframe{
+  width: 100%;
+ 
+  border: 0;
+  margin: 0;
+}
